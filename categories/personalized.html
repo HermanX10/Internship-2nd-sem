@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Gifts | Upahar</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">Upahar</h1>
+            <p class="tagline">Gifts that speak from the heart</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../products.html">All Products</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="flowers.html">Flowers</a>
+                        <a href="chocolates.html">Chocolates</a>
+                        <a href="gifts.html">Gift Hampers</a>
+                        <a href="personalized.html">Personalized</a>
+                    </div>
+                </li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../customer-care.html">Customer Care</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="../../login.html" class="btn-login">Login</a>
+                <a href="../../cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Hero -->
+    <section class="category-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1622883618971-5494a4b0be5a');">
+        <div class="category-hero-content">
+            <h1>Personalized Gifts</h1>
+            <p>Unique gifts made just for them</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-header">
+            <h2>Customized Gift Ideas</h2>
+            <div class="sort-filter">
+                <div class="filter-toggle">
+                    <i class="fas fa-filter"></i> Filters
+                </div>
+                <div class="sort-options">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="popular">Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-container">
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <div class="filter-group">
+                    <h3>Gift Types</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="gift-type" value="photo"> Photo Gifts</label>
+                        <label><input type="checkbox" name="gift-type" value="engraved"> Engraved Items</label>
+                        <label><input type="checkbox" name="gift-type" value="printed"> Printed Text</label>
+                        <label><input type="checkbox" name="gift-type" value="custom"> Custom Designs</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="5000" value="5000" class="slider" id="priceRange">
+                        <div class="price-values">
+                            <span>₹0</span>
+                            <span>₹5000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Materials</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="material" value="wood"> Wood</label>
+                        <label><input type="checkbox" name="material" value="metal"> Metal</label>
+                        <label><input type="checkbox" name="material" value="glass"> Glass</label>
+                        <label><input type="checkbox" name="material" value="ceramic"> Ceramic</label>
+                    </div>
+                </div>
+                <button class="btn-primary apply-filters">Apply Filters</button>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Personalized Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <img src="https://images.unsplash.com/photo-1622883618971-5494a4b0be5a" alt="Personalized Photo Mug">
+                    <div class="product-info">
+                        <h3>Personalized Photo Mug</h3>
+                        <div class="product-meta">
+                            <span class="price">₹499</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="product-desc">Custom mug with your favorite photo</p>
+                        <button class="btn-secondary" onclick="addToCart('personal1', 'Personalized Photo Mug', 499, 'https://images.unsplash.com/photo-1622883618971-5494a4b0be5a')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Personalized Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d" alt="Engraved Wooden Photo Frame">
+                    <div class="product-info">
+                        <h3>Engraved Wooden Photo Frame</h3>
+                        <div class="product-meta">
+                            <span class="price">₹699</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="product-desc">Custom text engraved on solid wood frame</p>
+                        <button class="btn-secondary" onclick="addToCart('personal2', 'Engraved Wooden Photo Frame', 699, 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Personalized Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Custom

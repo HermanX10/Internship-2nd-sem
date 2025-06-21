@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | Upahar</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">Upahar</h1>
+            <p class="tagline">Gifts that speak from the heart</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="products.html">All Products</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="categories/flowers.html">Flowers</a>
+                        <a href="categories/chocolates.html">Chocolates</a>
+                        <a href="categories/gifts.html">Gift Hampers</a>
+                        <a href="categories/personalized.html">Personalized</a>
+                    </div>
+                </li>
+                <li><a href="../about-us.html">About Us</a></li>
+                <li><a href="../customer-care.html">Customer Care</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="../login.html" class="btn-login">Login</a>
+                <a href="../cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-header">
+            <h1>All Gift Products</h1>
+            <div class="sort-filter">
+                <div class="filter-toggle">
+                    <i class="fas fa-filter"></i> Filters
+                </div>
+                <div class="sort-options">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="popular">Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-container">
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <div class="filter-group">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="categories/flowers.html">Flowers</a></li>
+                        <li><a href="categories/chocolates.html">Chocolates</a></li>
+                        <li><a href="categories/gifts.html">Gift Hampers</a></li>
+                        <li><a href="categories/personalized.html">Personalized Gifts</a></li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="5000" value="5000" class="slider" id="priceRange">
+                        <div class="price-values">
+                            <span>₹0</span>
+                            <span>₹5000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Occasions</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="occasion" value="birthday"> Birthday</label>
+                        <label><input type="checkbox" name="occasion" value="anniversary"> Anniversary</label>
+                        <label><input type="checkbox" name="occasion" value="valentine"> Valentine's Day</label>
+                        <label><input type="checkbox" name="occasion" value="wedding"> Wedding</label>
+                        <label><input type="checkbox" name="occasion" value="thankyou"> Thank You</label>
+                    </div>
+                </div>
+                <button class="btn-primary apply-filters">Apply Filters</button>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <img src="https://images.unsplash.com/photo-1560717842-0aa6b81b321b" alt="Rose Bouquet">
+                    <div class="product-info">
+                        <h3>Premium Rose Bouquet</h3>
+                        <div class="product-meta">
+                            <span class="price">₹899</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="product-desc">A dozen fresh red roses beautifully arranged</p>
+                        <button class="btn-secondary" onclick="addToCart('prod1', 'Premium Rose Bouquet', 899, 'https://images.unsplash.com/photo-1560717842-0aa6b81b321b')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1609813744178-5c3d5f2d53b4" alt="Chocolate Box">
+                    <div class="product-info">
+                        <h3>Luxury Chocolate Box</h3>
+                        <div class="product-meta">
+                            <span class="price">₹649</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="product-desc">Assorted premium chocolates in elegant packaging</p>
+                        <button class="btn-secondary" onclick="addToCart('prod2', 'Luxury Chocolate Box', 649, 'https://images.unsplash.com/photo-1609813744178-5c3d5f2d53b4')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="https://images.unsplash.com/photo-1583145752404-82fd659f0d04" alt="Gift Hamper">
+                    <div class="product-info">
+                        <h3>Deluxe Gift Hamper</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1299</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="product-desc">Curated collection of chocolates, wine and treats</p>
+                        <button class="btn-secondary" onclick="addToCart('prod3', 'Deluxe Gift Hamper', 1299, 'https://images.unsplash.com/photo-1583145752404-82fd659f0d04')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1622883618971-5494a4b0be5a" alt="Personalized Mug">
+                    <div class="product-info">
+                        <h3>Personalized Photo Mug</h3>
+                        <div class="product-meta">
+                            <span class="price">₹499</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="product-desc">Custom mug with your favorite photo</p>
+                        <button class="btn-secondary" onclick="addToCart('prod4', 'Personalized Photo Mug', 499, 'https://images.unsplash.com/photo-1622883618971-5494a4b0be5a')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176" alt="Teddy Bear">
+                    <div class="product-info">
+                        <h3>Soft Teddy Bear</h3>
+                        <div class="product-meta">
+                            <span class="price">₹599</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                        </div>
+                        <p class="product-desc">Cuddly teddy bear with a red ribbon</p>
+                        <button class="btn-secondary" onclick="addToCart('prod5', 'Soft Teddy Bear', 599, 'https://images.unsplash.com/photo-1513151233558-d860c5398176')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+                    <div class="product-badge">Sale</div>
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d" alt="Photo Frame">
+                    <div class="product-info">
+                        <h3>Wooden Photo Frame</h3>
+                        <div class="product-meta">
+                            <span class="price">₹349</span>
+                            <span class="original-price">₹499</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                        </div>
+                        <p class="product-desc">Elegant wooden frame for your memories</p>
+                        <button class="btn-secondary" onclick="addToCart('prod6', 'Wooden Photo Frame', 349, 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Scented Candle">
+                    <div class="product-info">
+                        <h3>Aromatherapy Candles</h3>
+                        <div class="product-meta">
+                            <span class="price">₹799</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="product-desc">Set of 3 relaxing scented candles</p>
+                        <button class="btn-secondary" onclick="addToCart('prod7', 'Aromatherapy Candles', 799, 'https://images.unsplash.com/photo-1603569283847-aa295f0d016a')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1596728321737-0fe087f7672b" alt="Birthday Cake">
+                    <div class="product-info">
+                        <h3>Custom Birthday Cake</h3>
+                        <div class="product-meta">
+                            <span class="price">₹999</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="product-desc">Personalized cake with name and photo</p>
+                        <button class="btn-secondary" onclick="addToCart('prod8', 'Custom Birthday Cake', 999, 'https://images.unsplash.com/photo-1596728321737-0fe087f7672b')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Upahar</h3>
+                <p>Thoughtful gifts for all occasions delivered with care</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="../about-us.html">About Us</a></li>
+                    <li><a href="../customer-care.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <p>Subscribe to our newsletter</p>
+                <form class="newsletter">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Upahar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>

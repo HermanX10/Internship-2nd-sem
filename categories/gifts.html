@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Hampers | Upahar</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">Upahar</h1>
+            <p class="tagline">Gifts that speak from the heart</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../products.html">All Products</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="flowers.html">Flowers</a>
+                        <a href="chocolates.html">Chocolates</a>
+                        <a href="gifts.html">Gift Hampers</a>
+                        <a href="personalized.html">Personalized</a>
+                    </div>
+                </li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../customer-care.html">Customer Care</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="../../login.html" class="btn-login">Login</a>
+                <a href="../../cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Hero -->
+    <section class="category-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1583145752404-82fd659f0d04');">
+        <div class="category-hero-content">
+            <h1>Gift Hampers</h1>
+            <p>Thoughtfully curated collections for every occasion</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-header">
+            <h2>Gift Collections</h2>
+            <div class="sort-filter">
+                <div class="filter-toggle">
+                    <i class="fas fa-filter"></i> Filters
+                </div>
+                <div class="sort-options">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="popular">Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-container">
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <div class="filter-group">
+                    <h3>Hamper Types</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="hamper-type" value="luxury"> Luxury</label>
+                        <label><input type="checkbox" name="hamper-type" value="corporate"> Corporate</label>
+                        <label><input type="checkbox" name="hamper-type" value="romantic"> Romantic</label>
+                        <label><input type="checkbox" name="hamper-type" value="birthday"> Birthday</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="10000" value="10000" class="slider" id="priceRange">
+                        <div class="price-values">
+                            <span>₹0</span>
+                            <span>₹10000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Contents</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="contents" value="chocolates"> Chocolates</label>
+                        <label><input type="checkbox" name="contents" value="wine"> Wine</label>
+                        <label><input type="checkbox" name="contents" value="flowers"> Flowers</label>
+                        <label><input type="checkbox" name="contents" value="snacks"> Gourmet Snacks</label>
+                    </div>
+                </div>
+                <button class="btn-primary apply-filters">Apply Filters</button>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Gift Hamper 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <img src="https://images.unsplash.com/photo-1583145752404-82fd659f0d04" alt="Deluxe Gift Hamper">
+                    <div class="product-info">
+                        <h3>Deluxe Gift Hamper</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1299</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="product-desc">Curated collection of chocolates, wine and treats</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper1', 'Deluxe Gift Hamper', 1299, 'https://images.unsplash.com/photo-1583145752404-82fd659f0d04')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Gift Hamper 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Romantic Evening Hamper">
+                    <div class="product-info">
+                        <h3>Romantic Evening Hamper</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1999</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="product-desc">Wine, chocolates, candles and rose petals</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper2', 'Romantic Evening Hamper', 1999, 'https://images.unsplash.com/photo-1603569283847-aa295f0d016a')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Gift Hamper 3 -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="https://images.unsplash.com/photo-1603893662172-99ed0cea42a5" alt="Corporate Gift Hamper">
+                    <div class="product-info">
+                        <h3>Corporate Gift Hamper</h3>
+                        <div class="product-meta">
+                            <span class="price">₹2499</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="product-desc">Premium snacks, tea and coffee selection</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper3', 'Corporate Gift Hamper', 2499, 'https://images.unsplash.com/photo-1603893662172-99ed0cea42a5')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Gift Hamper 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Spa Relaxation Hamper">
+                    <div class="product-info">
+                        <h3>Spa Relaxation Hamper</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1799</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="product-desc">Aromatherapy products, candles and herbal tea</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper4', 'Spa Relaxation Hamper', 1799, 'https://images.unsplash.com/photo-1603569283847-aa295f0d016a')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Gift Hamper 5 -->
+                <div class="product-card">
+                    <div class="product-badge">Sale</div>
+                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Birthday Celebration Hamper">
+                    <div class="product-info">
+                        <h3>Birthday Celebration Hamper</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1499</span>
+                            <span class="original-price">₹1999</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="product-desc">Balloons, cake, chocolates and party favors</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper5', 'Birthday Celebration Hamper', 1499, 'https://images.unsplash.com/photo-1603569283847-aa295f0d016a')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Gift Hamper 6 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Gourmet Food Hamper">
+                    <div class="product-info">
+                        <h3>Gourmet Food Hamper</h3>
+                        <div class="product-meta">
+                            <span class="price">₹2199</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="product-desc">Artisanal cheeses, crackers and preserves</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper6', 'Gourmet Food Hamper', 2199, 'https://images.unsplash.com/photo-1603569283847-aa295f0d016a')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Info -->
+        <div class="category-info">
+            <h3>About Our Gift Hampers</h3>
+            <p>Upahar's gift hampers are carefully curated collections designed to delight recipients. Each hamper is assembled with attention to detail, combining premium products that complement each other. Whether for a special occasion or just to show you care, our hampers make the perfect gift.</p>
+            
+            <h3>Customization Options</h3>
+            <p>Many of our hampers can be customized to suit your needs. Add a personal message, select specific products, or even create your own unique hamper combination. Contact our customer care team for custom orders.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Upahar</h3>
+                <p>Thoughtful gifts for all occasions delivered with care</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../products.html">Products</a></li>
+                    <li><a href="../../about-us.html">About Us</a></li>
+                    <li><a href="../../customer-care.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <p>Subscribe to our newsletter</p>
+                <form class="newsletter">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Upahar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/products.js"></script>
+</body>
+</html>

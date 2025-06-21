@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers | Upahar</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">Upahar</h1>
+            <p class="tagline">Gifts that speak from the heart</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../products.html">All Products</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="flowers.html">Flowers</a>
+                        <a href="chocolates.html">Chocolates</a>
+                        <a href="gifts.html">Gift Hampers</a>
+                        <a href="personalized.html">Personalized</a>
+                    </div>
+                </li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../customer-care.html">Customer Care</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="../../login.html" class="btn-login">Login</a>
+                <a href="../../cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Hero -->
+    <section class="category-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1560717842-0aa6b81b321b');">
+        <div class="category-hero-content">
+            <h1>Flowers</h1>
+            <p>Fresh blooms for every occasion</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-header">
+            <h2>Flower Arrangements</h2>
+            <div class="sort-filter">
+                <div class="filter-toggle">
+                    <i class="fas fa-filter"></i> Filters
+                </div>
+                <div class="sort-options">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="popular">Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-container">
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <div class="filter-group">
+                    <h3>Flower Types</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="flower-type" value="roses"> Roses</label>
+                        <label><input type="checkbox" name="flower-type" value="lilies"> Lilies</label>
+                        <label><input type="checkbox" name="flower-type" value="orchids"> Orchids</label>
+                        <label><input type="checkbox" name="flower-type" value="mixed"> Mixed</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="5000" value="5000" class="slider" id="priceRange">
+                        <div class="price-values">
+                            <span>₹0</span>
+                            <span>₹5000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Occasions</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="occasion" value="birthday"> Birthday</label>
+                        <label><input type="checkbox" name="occasion" value="anniversary"> Anniversary</label>
+                        <label><input type="checkbox" name="occasion" value="valentine"> Valentine's Day</label>
+                        <label><input type="checkbox" name="occasion" value="wedding"> Wedding</label>
+                    </div>
+                </div>
+                <button class="btn-primary apply-filters">Apply Filters</button>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Flower Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <img src="https://perfectgiftadda.com/wp-content/uploads/2024/08/IMG_5792-scaled.jpeg" alt="Rose Bouquet">
+                    <div class="product-info">
+                        <h3>Premium White & Rose Bouquet</h3>
+                        <div class="product-meta">
+                            <span class="price">₹899</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="product-desc">A dozen fresh red roses beautifully arranged</p>
+                        <button class="btn-secondary" onclick="addToCart('flower1', 'Premium Rose Bouquet', 899, 'https://images.unsplash.com/photo-1560717842-0aa6b81b321b')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Flower Product 2 -->
+                <div class="product-card">
+                    <img src="https://orchidya.com/cdn/shop/files/orchidya-london-flower-shop-beige-pink-roses-sandy-4.jpg?v=1735984729&width=600" alt="Lily Bouquet">
+                    <div class="product-info">
+                        <h3>Sandie</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1099</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="product-desc">A stunning bouquet featuring exquisite beige roses that are truly one-of-a-kind.</p>
+                        <button class="btn-secondary" onclick="addToCart('flower2', 'Elegant Lily Bouquet', 1099, 'https://images.unsplash.com/photo-1526047932273-341f2a7631f9')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Flower Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="https://orchidya.com/cdn/shop/files/Orchidya-London-Flower-Shop-Delivery-Pink-White-Fresh-Bouquet-Sweet-Bliss-1.jpg?v=1715851891&width=600" alt="Mixed Flowers">
+                    <div class="product-info">
+                        <h3>Sweet Bliss</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1399</span>
+                            <span class="rating"><i class="fas fa-star"></i> 5.0</span>
+                        </div>
+                        <p class="product-desc">Colorful seasonal flowers in a wicker basket</p>
+                        <button class="btn-secondary" onclick="addToCart('flower3', 'Mixed Flower Basket', 1299, 'https://images.unsplash.com/photo-1455659817273-f96807779a8a')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Flower Product 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac" alt="Orchid Plant">
+                    <div class="product-info">
+                        <h3>Exotic Orchid Plant</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1499</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="product-desc">Live orchid plant in ceramic pot</p>
+                        <button class="btn-secondary" onclick="addToCart('flower4', 'Exotic Orchid Plant', 1499, 'https://images.unsplash.com/photo-1519378058457-4c29a0a2efac')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Flower Product 5 -->
+                <div class="product-card">
+                    <div class="product-badge">Sale</div>
+                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2" alt="Tulip Bouquet">
+                    <div class="product-info">
+                        <h3>Tulip Bouquet</h3>
+                        <div class="product-meta">
+                            <span class="price">₹799</span>
+                            <span class="original-price">₹999</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="product-desc">Fresh tulips in vibrant colors</p>
+                        <button class="btn-secondary" onclick="addToCart('flower5', 'Tulip Bouquet', 799, 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Flower Product 6 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946" alt="Sunflower Bouquet">
+                    <div class="product-info">
+                        <h3>Sunflower Bouquet</h3>
+                        <div class="product-meta">
+                            <span class="price">₹899</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="product-desc">Bright sunflowers with filler flowers</p>
+                        <button class="btn-secondary" onclick="addToCart('flower6', 'Sunflower Bouquet', 899, 'https://images.unsplash.com/photo-1490750967868-88aa4486c946')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Info -->
+        <div class="category-info">
+            <h3>About Our Flowers</h3>
+            <p>At Upahar, we source the freshest flowers from trusted growers to ensure your gift makes a lasting impression. Our floral arrangements are handcrafted by skilled florists who pay attention to every detail, from flower selection to presentation.</p>
+            
+            <h3>Delivery Information</h3>
+            <p>We offer same-day delivery for orders placed before 2pm. All flowers are carefully packaged to ensure they arrive in perfect condition. Each delivery includes a personalized message card.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Upahar</h3>
+                <p>Thoughtful gifts for all occasions delivered with care</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../products.html">Products</a></li>
+                    <li><a href="../../about-us.html">About Us</a></li>
+                    <li><a href="../../customer-care.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <p>Subscribe to our newsletter</p>
+                <form class="newsletter">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Upahar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/products.js"></script>
+</body>
+</html>

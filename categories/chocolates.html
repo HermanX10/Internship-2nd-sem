@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolates | Upahar</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">Upahar</h1>
+            <p class="tagline">Gifts that speak from the heart</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../products.html">All Products</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="flowers.html">Flowers</a>
+                        <a href="chocolates.html">Chocolates</a>
+                        <a href="gifts.html">Gift Hampers</a>
+                        <a href="personalized.html">Personalized</a>
+                    </div>
+                </li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../customer-care.html">Customer Care</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="../../login.html" class="btn-login">Login</a>
+                <a href="../../cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Hero -->
+    <section class="category-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1609813744178-5c3d5f2d53b4');">
+        <div class="category-hero-content">
+            <h1>Chocolates</h1>
+            <p>Delicious treats for every sweet tooth</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-header">
+            <h2>Chocolate Collections</h2>
+            <div class="sort-filter">
+                <div class="filter-toggle">
+                    <i class="fas fa-filter"></i> Filters
+                </div>
+                <div class="sort-options">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="popular">Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-container">
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <div class="filter-group">
+                    <h3>Chocolate Types</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="chocolate-type" value="dark"> Dark Chocolate</label>
+                        <label><input type="checkbox" name="chocolate-type" value="milk"> Milk Chocolate</label>
+                        <label><input type="checkbox" name="chocolate-type" value="white"> White Chocolate</label>
+                        <label><input type="checkbox" name="chocolate-type" value="assorted"> Assorted</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="5000" value="5000" class="slider" id="priceRange">
+                        <div class="price-values">
+                            <span>₹0</span>
+                            <span>₹5000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Brands</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="brand" value="ferrero"> Ferrero</label>
+                        <label><input type="checkbox" name="brand" value="cadbury"> Cadbury</label>
+                        <label><input type="checkbox" name="brand" value="lindt"> Lindt</label>
+                        <label><input type="checkbox" name="brand" value="ghirardelli"> Ghirardelli</label>
+                    </div>
+                </div>
+                <button class="btn-primary apply-filters">Apply Filters</button>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Chocolate Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <img src="https://www.zoroy.com/cdn/shop/files/100001103_1.jpg?v=1731754294" alt="Luxury Chocolate Box">
+                    <div class="product-info">
+                        <h3>Luxury Chocolate Box</h3>
+                        <div class="product-meta">
+                            <span class="price">₹649</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="product-desc">Assorted premium chocolates in elegant packaging</p>
+                        <button class="btn-secondary" onclick="addToCart('choco1', 'Luxury Chocolate Box', 649, 'https://images.unsplash.com/photo-1609813744178-5c3d5f2d53b4')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 2 -->
+                <div class="product-card">
+                    <img src="https://images-cdn.ubuy.co.in/633b2c181b0bca35e43f5b16-ubuy-online-shopping.jpg" alt="Dark Chocolate Collection">
+                    <div class="product-info">
+                        <h3>Dark Chocolate Collection</h3>
+                        <div class="product-meta">
+                            <span class="price">₹799</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="product-desc">Selection of 70% cocoa dark chocolates</p>
+                        <button class="btn-secondary" onclick="addToCart('choco2', 'Dark Chocolate Collection', 799, 'https://images.unsplash.com/photo-1606313564200-75a1b1b36a03')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="https://images-cdn.ubuy.co.in/633aae8e4f485c27fe227322-godiva-chocolatier-signature-truffles.jpg" alt="Chocolate Truffles">
+                    <div class="product-info">
+                        <h3>Chocolate Truffles</h3>
+                        <div class="product-meta">
+                            <span class="price">₹899</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="product-desc">Handcrafted truffles in assorted flavors</p>
+                        <button class="btn-secondary" onclick="addToCart('choco3', 'Chocolate Truffles', 899, 'https://images.unsplash.com/photo-1606787366850-dee0120b7c91')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 4 -->
+                <div class="product-card">
+                    <img src="https://www.zupppy.com/wp-content/uploads/2022/02/WhatsApp-Image-2022-02-16-at-1.24.49-PM.jpeg" alt="Personalized Chocolate Box">
+                    <div class="product-info">
+                        <h3>Personalized Chocolate Box</h3>
+                        <div class="product-meta">
+                            <span class="price">₹999</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="product-desc">Custom message printed on each chocolate</p>
+                        <button class="btn-secondary" onclick="addToCart('choco4', 'Personalized Chocolate Box', 999, 'https://images.unsplash.com/photo-1606787366850-dee0120b7c91')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 5 -->
+                <div class="product-card">
+                    <div class="product-badge">Sale</div>
+                    <img src="https://i.ytimg.com/vi/C-k7BPc-XBo/maxresdefault.jpg" alt="Chocolate Dipped Fruits">
+                    <div class="product-info">
+                        <h3>Chocolate Dipped Fruits</h3>
+                        <div class="product-meta">
+                            <span class="price">₹749</span>
+                            <span class="original-price">₹899</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                        </div>
+                        <p class="product-desc">Strawberries and bananas dipped in chocolate</p>
+                        <button class="btn-secondary" onclick="addToCart('choco5', 'Chocolate Dipped Fruits', 749, 'https://images.unsplash.com/photo-1603893662172-99ed0cea42a5')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 6 -->
+                <div class="product-card">
+                    <img src="https://img.freepik.com/premium-photo/elegant-arrangement-gourmet-chocolate-bars-with-unique-toppings_1314467-221169.jpg?w=360" alt="Gourmet Chocolate Bars">
+                    <div class="product-info">
+                        <h3>Gourmet Chocolate Bars</h3>
+                        <div class="product-meta">
+                            <span class="price">₹549</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.4</span>
+                        </div>
+                        <p class="product-desc">Artisanal chocolate bars with unique flavors</p>
+                        <button class="btn-secondary" onclick="addToCart('choco6', 'Gourmet Chocolate Bars', 549, 'https://images.unsplash.com/photo-1603893662172-99ed0cea42a5')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Info -->
+        <div class="category-info">
+            <h3>About Our Chocolates</h3>
+            <p>Upahar offers premium chocolates from the finest chocolatiers around the world. Each selection is carefully chosen for its quality ingredients and exquisite taste. Whether you're looking for classic favorites or innovative new flavors, we have something to satisfy every chocolate lover.</p>
+            
+            <h3>Delivery Information</h3>
+            <p>Our chocolates are carefully packaged to maintain freshness during delivery. We recommend refrigerating upon receipt if not consuming immediately. Delivery available nationwide with temperature-controlled packaging for premium quality assurance.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Upahar</h3>
+                <p>Thoughtful gifts for all occasions delivered with care</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../products.html">Products</a></li>
+                    <li><a href="../../about-us.html">About Us</a></li>
+                    <li><a href="../../customer-care.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <p>Subscribe to our newsletter</p>
+                <form class="newsletter">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Upahar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/products.js"></script>
+</body>
+</html>
