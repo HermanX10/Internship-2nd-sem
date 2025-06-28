@@ -1,0 +1,257 @@
+/* Signup Page Styles */
+.signup-section {
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+
+.signup-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.signup-form-container {
+    flex: 1;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.signup-form-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.signup-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.signup-form input:focus {
+    border-color: var(--primary-color); /* Uses primary color variable */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.2); /* Changed hardcoded pink rgba to purple rgba */
+}
+
+.password-input {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+}
+
+.error-message {
+    display: block;
+    color: var(--primary-color); /* Uses primary color variable */
+    font-size: 0.85rem;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.password-strength {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.strength-indicator {
+    height: 5px;
+    flex-grow: 1;
+    background: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.strength-indicator::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0;
+    background: var(--primary-color); /* Uses primary color variable */
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+.strength-text {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    width: auto;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.login-redirect {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.login-redirect a {
+    color: var(--primary-color); /* Uses primary color variable */
+    font-weight: 500;
+}
+
+.social-signup {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-signup p {
+    color: #666;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.social-signup p::before,
+.social-signup p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: #ddd;
+}
+
+.social-signup p::before {
+    left: 0;
+}
+
+.social-signup p::after {
+    right: 0;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.social-btn:hover {
+    background: #f9f9f9;
+}
+
+.social-btn i {
+    font-size: 1.1rem;
+}
+
+.google-btn {
+    color: #DB4437;
+}
+
+.facebook-btn {
+    color: #4267B2;
+}
+
+.signup-benefits {
+    flex: 1;
+    max-width: 400px;
+}
+
+.signup-benefits h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.benefits-list {
+    list-style: none;
+}
+
+.benefits-list li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.benefits-list i {
+    color: var(--primary-color); /* Uses primary color variable */
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.benefits-list h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.benefits-list p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .signup-container {
+        flex-direction: column;
+    }
+    
+    .signup-benefits {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .signup-form-container {
+        padding: 30px 20px;
+    }
+    
+    .social-buttons {
+        flex-direction: column;
+    }
+}

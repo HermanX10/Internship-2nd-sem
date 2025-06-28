@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowers | Upahar</title>
+    <title>Flowers | GiftNest</title>
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,7 +12,7 @@
     <!-- Header -->
     <header>
         <div class="logo-container">
-            <h1 class="logo">Upahar</h1>
+            <h1 class="logo">GiftNest</h1>
             <p class="tagline">Gifts that speak from the heart</p>
         </div>
         <nav>
@@ -38,13 +38,7 @@
         </nav>
     </header>
 
-    <!-- Category Hero -->
-    <section class="category-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1560717842-0aa6b81b321b');">
-        <div class="category-hero-content">
-            <h1>Flowers</h1>
-            <p>Fresh blooms for every occasion</p>
-        </div>
-    </section>
+    
 
     <!-- Products Section -->
     <section class="products-section">
@@ -57,7 +51,7 @@
                 <div class="sort-options">
                     <label for="sort">Sort By:</label>
                     <select id="sort">
-                        <option value="popular">Popular</option>
+                        <option value="popular">Recommended</option>
                         <option value="price-low">Price: Low to High</option>
                         <option value="price-high">Price: High to Low</option>
                         <option value="newest">Newest Arrivals</option>
@@ -109,11 +103,11 @@
                     <div class="product-info">
                         <h3>Premium White & Rose Bouquet</h3>
                         <div class="product-meta">
-                            <span class="price">₹899</span>
+                            <span class="price">₹1199</span>
                             <span class="rating"><i class="fas fa-star"></i> 4.9</span>
                         </div>
-                        <p class="product-desc">A dozen fresh red roses beautifully arranged</p>
-                        <button class="btn-secondary" onclick="addToCart('flower1', 'Premium Rose Bouquet', 899, 'https://images.unsplash.com/photo-1560717842-0aa6b81b321b')">Add to Cart</button>
+                        <p class="product-desc">A dozen fresh red and white roses beautifully arranged</p>
+                        <button class="btn-secondary" onclick="addToCart('flower1', 'Premium White & Rose Bouquet', 1199, 'https://perfectgiftadda.com/wp-content/uploads/2024/08/IMG_5792-scaled.jpeg')">Add to Cart</button>
                     </div>
                 </div>
 
@@ -121,13 +115,13 @@
                 <div class="product-card">
                     <img src="https://orchidya.com/cdn/shop/files/orchidya-london-flower-shop-beige-pink-roses-sandy-4.jpg?v=1735984729&width=600" alt="Lily Bouquet">
                     <div class="product-info">
-                        <h3>Sandie</h3>
+                        <h3>Classic Sandie Rose Bouquet</h3>
                         <div class="product-meta">
-                            <span class="price">₹1099</span>
+                            <span class="price">₹1499</span>
                             <span class="rating"><i class="fas fa-star"></i> 4.7</span>
                         </div>
                         <p class="product-desc">A stunning bouquet featuring exquisite beige roses that are truly one-of-a-kind.</p>
-                        <button class="btn-secondary" onclick="addToCart('flower2', 'Elegant Lily Bouquet', 1099, 'https://images.unsplash.com/photo-1526047932273-341f2a7631f9')">Add to Cart</button>
+                        <button class="btn-secondary" onclick="addToCart('flower2', 'Classic Sandie Rose Bouquet', 1499, 'https://orchidya.com/cdn/shop/files/orchidya-london-flower-shop-beige-pink-roses-sandy-4.jpg?v=1735984729&width=600')">Add to Cart</button>
                     </div>
                 </div>
 
@@ -136,57 +130,86 @@
                     <div class="product-badge">New</div>
                     <img src="https://orchidya.com/cdn/shop/files/Orchidya-London-Flower-Shop-Delivery-Pink-White-Fresh-Bouquet-Sweet-Bliss-1.jpg?v=1715851891&width=600" alt="Mixed Flowers">
                     <div class="product-info">
-                        <h3>Sweet Bliss</h3>
+                        <h3>Premium Sweet Bliss Bouquet</h3>
                         <div class="product-meta">
                             <span class="price">₹1399</span>
                             <span class="rating"><i class="fas fa-star"></i> 5.0</span>
                         </div>
-                        <p class="product-desc">Colorful seasonal flowers in a wicker basket</p>
-                        <button class="btn-secondary" onclick="addToCart('flower3', 'Mixed Flower Basket', 1299, 'https://images.unsplash.com/photo-1455659817273-f96807779a8a')">Add to Cart</button>
+                        <p class="product-desc">As sweet as the love you share, this charming pink bouquet is the perfect gesture for someone special.</p>
+                        <button class="btn-secondary" onclick="addToCart('flower3', 'Premium Sweet Bliss Bouquet', 1299, 'https://orchidya.com/cdn/shop/files/Orchidya-London-Flower-Shop-Delivery-Pink-White-Fresh-Bouquet-Sweet-Bliss-1.jpg?v=1715851891&width=600')">Add to Cart</button>
                     </div>
                 </div>
 
                 <!-- Flower Product 4 -->
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac" alt="Orchid Plant">
+                    <img src="https://b2866409.smushcdn.com/2866409/wp-content/uploads/2023/08/01A-1-600x600.jpg?lossy=1&strip=1&webp=1" alt="Orchid Plant">
                     <div class="product-info">
-                        <h3>Exotic Orchid Plant</h3>
+                        <h3>Classic Elegant Tulip Bouquet</h3>
                         <div class="product-meta">
                             <span class="price">₹1499</span>
                             <span class="rating"><i class="fas fa-star"></i> 4.8</span>
                         </div>
-                        <p class="product-desc">Live orchid plant in ceramic pot</p>
-                        <button class="btn-secondary" onclick="addToCart('flower4', 'Exotic Orchid Plant', 1499, 'https://images.unsplash.com/photo-1519378058457-4c29a0a2efac')">Add to Cart</button>
+                        <p class="product-desc">Radiate grace and affection with our 20 Tulips bouquet, a charming arrangement of Light Pink Tulips</p>
+                        <button class="btn-secondary" onclick="addToCart('flower4', 'Elegant Tulip Bouquet', 1499, 'https://b2866409.smushcdn.com/2866409/wp-content/uploads/2023/08/01A-1-600x600.jpg?lossy=1&strip=1&webp=1')">Add to Cart</button>
                     </div>
                 </div>
 
                 <!-- Flower Product 5 -->
                 <div class="product-card">
                     <div class="product-badge">Sale</div>
-                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2" alt="Tulip Bouquet">
+                    <img src="https://bellebouquet.co.nz/cdn/shop/files/Pink_Purple_4.webp?v=1723860597&width=823" alt="Tulip Bouquet">
                     <div class="product-info">
-                        <h3>Tulip Bouquet</h3>
+                        <h3>Classic Pink & Purple Bouquet</h3>
                         <div class="product-meta">
                             <span class="price">₹799</span>
                             <span class="original-price">₹999</span>
                             <span class="rating"><i class="fas fa-star"></i> 4.6</span>
                         </div>
-                        <p class="product-desc">Fresh tulips in vibrant colors</p>
-                        <button class="btn-secondary" onclick="addToCart('flower5', 'Tulip Bouquet', 799, 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2')">Add to Cart</button>
+                        <p class="product-desc">Fresh Pink & Purple color flower bouquet</p>
+                        <button class="btn-secondary" onclick="addToCart('flower5', 'Classic Pink & Purple Bouquet', 799, 'https://bellebouquet.co.nz/cdn/shop/files/Pink_Purple_4.webp?v=1723860597&width=823')">Add to Cart</button>
                     </div>
                 </div>
 
                 <!-- Flower Product 6 -->
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946" alt="Sunflower Bouquet">
+                    <img src="https://kvitochka.ua/image/cache/catalog/image/cache/catalog/00000000003/bouquet-ellow-blue-2024-18-612x612.webp" alt="Sunflower Bouquet">
                     <div class="product-info">
-                        <h3>Sunflower Bouquet</h3>
+                        <h3>Large premium bouquet of Love</h3>
                         <div class="product-meta">
-                            <span class="price">₹899</span>
+                            <span class="price">₹2899</span>
                             <span class="rating"><i class="fas fa-star"></i> 4.7</span>
                         </div>
-                        <p class="product-desc">Bright sunflowers with filler flowers</p>
-                        <button class="btn-secondary" onclick="addToCart('flower6', 'Sunflower Bouquet', 899, 'https://images.unsplash.com/photo-1490750967868-88aa4486c946')">Add to Cart</button>
+                        <p class="product-desc">Large premium bouquet of peony roses, chrysanthemums and decor. </p>
+                        <button class="btn-secondary" onclick="addToCart('flower6', 'Large premium bouquet of Love', 2899, 'https://kvitochka.ua/image/cache/catalog/image/cache/catalog/00000000003/bouquet-ellow-blue-2024-18-612x612.webp')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Flower Product 7 -->
+                <div class="product-card">
+                    <img src="https://images-cdn.ubuy.co.in/684d370fa0ebc02fe00d3874-dried-daisy-flowers-bouquet-250-dry.jpg" alt="Tulip Bouquet">
+                    <div class="product-info">
+                        <h3>Dried Daisy Flowers Bouquet</h3>
+                        <div class="product-meta">
+                            <span class="price">₹799</span>
+                            <span class="original-price">₹999</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="product-desc">Dried daisies are made from natural real flowers without any processing, maintaining their original appearance and timeless natural beauty</p>
+                        <button class="btn-secondary" onclick="addToCart('flower5', 'Dried Daisy Flowers Bouquet', 799, 'https://images-cdn.ubuy.co.in/684d370fa0ebc02fe00d3874-dried-daisy-flowers-bouquet-250-dry.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Flower Product 8 -->
+                <div class="product-card">
+                    <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt9prodlp/products/p-mauve-memoir-412293-m.jpg" alt="Tulip Bouquet">
+                    <div class="product-info">
+                        <h3>Admiring Carnation Bouquet</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1099</span>  
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="product-desc">Classics White Carnation flowers beautifully arranged </p>
+                        <button class="btn-secondary" onclick="addToCart('flower5', 'Admiring Carnation Bouquet', 1099, 'https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt9prodlp/products/p-mauve-memoir-412293-m.jpg')">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -195,7 +218,7 @@
         <!-- Category Info -->
         <div class="category-info">
             <h3>About Our Flowers</h3>
-            <p>At Upahar, we source the freshest flowers from trusted growers to ensure your gift makes a lasting impression. Our floral arrangements are handcrafted by skilled florists who pay attention to every detail, from flower selection to presentation.</p>
+            <p>At GiftNest, we source the freshest flowers from trusted growers to ensure your gift makes a lasting impression. Our floral arrangements are handcrafted by skilled florists who pay attention to every detail, from flower selection to presentation.</p>
             
             <h3>Delivery Information</h3>
             <p>We offer same-day delivery for orders placed before 2pm. All flowers are carefully packaged to ensure they arrive in perfect condition. Each delivery includes a personalized message card.</p>
@@ -206,7 +229,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Upahar</h3>
+                <h3>GiftNest</h3>
                 <p>Thoughtful gifts for all occasions delivered with care</p>
             </div>
             <div class="footer-section">
@@ -221,19 +244,19 @@
             <div class="footer-section">
                 <h3>Customer Service</h3>
                 <ul>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Shipping Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="customer-care.html">FAQs</a></li>
+                    <li><a href="customer-care.html">Shipping Policy</a></li>
+                    <li><a href="customer-care.html">Return Policy</a></li>
+                    <li><a href="customer-care.html">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Connect With Us</h3>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
                 </div>
                 <p>Subscribe to our newsletter</p>
                 <form class="newsletter">
@@ -243,7 +266,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Upahar. All rights reserved.</p>
+            <p>&copy; 2023 GiftNest. All rights reserved.</p>
         </div>
     </footer>
 

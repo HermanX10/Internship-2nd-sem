@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gift Hampers | Upahar</title>
+    <title>Gift Hampers | GiftNest</title>
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,7 +12,7 @@
     <!-- Header -->
     <header>
         <div class="logo-container">
-            <h1 class="logo">Upahar</h1>
+            <h1 class="logo">GiftNest</h1>
             <p class="tagline">Gifts that speak from the heart</p>
         </div>
         <nav>
@@ -38,13 +38,7 @@
         </nav>
     </header>
 
-    <!-- Category Hero -->
-    <section class="category-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1583145752404-82fd659f0d04');">
-        <div class="category-hero-content">
-            <h1>Gift Hampers</h1>
-            <p>Thoughtfully curated collections for every occasion</p>
-        </div>
-    </section>
+   
 
     <!-- Products Section -->
     <section class="products-section">
@@ -57,7 +51,7 @@
                 <div class="sort-options">
                     <label for="sort">Sort By:</label>
                     <select id="sort">
-                        <option value="popular">Popular</option>
+                        <option value="popular">Recommended</option>
                         <option value="price-low">Price: Low to High</option>
                         <option value="price-high">Price: High to Low</option>
                         <option value="newest">Newest Arrivals</option>
@@ -102,91 +96,120 @@
 
             <!-- Products Grid -->
             <div class="products-grid">
-                <!-- Gift Hamper 1 -->
+                <!-- Gift Hamper 1 - FNP Style -->
                 <div class="product-card">
-                    <div class="product-badge">Best Seller</div>
-                    <img src="https://images.unsplash.com/photo-1583145752404-82fd659f0d04" alt="Deluxe Gift Hamper">
+                    <div class="product-badge">FNP Exclusive</div>
+                    <img src="https://www.fnp.com//images/pr/l/v20230804124445/the-luxury-gift-hamper_1.jpg" alt="Luxury Indulgence Hamper">
                     <div class="product-info">
-                        <h3>Deluxe Gift Hamper</h3>
+                        <h3>Luxury Indulgence Hamper</h3>
                         <div class="product-meta">
-                            <span class="price">₹1299</span>
+                            <span class="price">₹2999</span>
                             <span class="rating"><i class="fas fa-star"></i> 4.9</span>
                         </div>
-                        <p class="product-desc">Curated collection of chocolates, wine and treats</p>
-                        <button class="btn-secondary" onclick="addToCart('hamper1', 'Deluxe Gift Hamper', 1299, 'https://images.unsplash.com/photo-1583145752404-82fd659f0d04')">Add to Cart</button>
+                        <p class="product-desc">Premium chocolates, gourmet coffee, and exotic dry fruits</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper1', 'Luxury Indulgence Hamper', 2999, 'https://www.fnp.com//images/pr/l/v20230804124445/the-luxury-gift-hamper_1.jpg')">Add to Cart</button>
                     </div>
                 </div>
 
-                <!-- Gift Hamper 2 -->
+                <!-- Gift Hamper 2 - FNP Style -->
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Romantic Evening Hamper">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRI_uJxjA3NzGaTWXXYhtaswgPmlsWOTqQDZ9Ppsa0GQ1SKHdMH6cZzebPETeyn8qOPcMIWiN6lOol4B4QFbrEsIkCYcVbqKVEDN3Cb4Yo" alt="Wellness & Serenity Hamper">
                     <div class="product-info">
-                        <h3>Romantic Evening Hamper</h3>
+                        <h3>Wellness & Serenity Hamper</h3>
                         <div class="product-meta">
-                            <span class="price">₹1999</span>
-                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
-                        </div>
-                        <p class="product-desc">Wine, chocolates, candles and rose petals</p>
-                        <button class="btn-secondary" onclick="addToCart('hamper2', 'Romantic Evening Hamper', 1999, 'https://images.unsplash.com/photo-1603569283847-aa295f0d016a')">Add to Cart</button>
-                    </div>
-                </div>
-
-                <!-- Gift Hamper 3 -->
-                <div class="product-card">
-                    <div class="product-badge">New</div>
-                    <img src="https://images.unsplash.com/photo-1603893662172-99ed0cea42a5" alt="Corporate Gift Hamper">
-                    <div class="product-info">
-                        <h3>Corporate Gift Hamper</h3>
-                        <div class="product-meta">
-                            <span class="price">₹2499</span>
+                            <span class="price">₹1899</span>
                             <span class="rating"><i class="fas fa-star"></i> 4.7</span>
                         </div>
-                        <p class="product-desc">Premium snacks, tea and coffee selection</p>
-                        <button class="btn-secondary" onclick="addToCart('hamper3', 'Corporate Gift Hamper', 2499, 'https://images.unsplash.com/photo-1603893662172-99ed0cea42a5')">Add to Cart</button>
+                        <p class="product-desc">Organic teas, aromatherapy oils, and soothing bath essentials</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper2', 'Wellness & Serenity Hamper', 1899, 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRI_uJxjA3NzGaTWXXYhtaswgPmlsWOTqQDZ9Ppsa0GQ1SKHdMH6cZzebPETeyn8qOPcMIWiN6lOol4B4QFbrEsIkCYcVbqKVEDN3Cb4Yo')">Add to Cart</button>
                     </div>
                 </div>
 
-                <!-- Gift Hamper 4 -->
+                <!-- Gift Hamper 3 - FNP Style -->
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Spa Relaxation Hamper">
+                    <div class="product-badge">New Arrival</div>
+                    <img src="https://www.fnp.com//images/pr/l/v20240515173302/gourmet-gift-hamper_1.jpg" alt="Gourmet Snack Delight">
                     <div class="product-info">
-                        <h3>Spa Relaxation Hamper</h3>
+                        <h3>Gourmet Snack Delight</h3>
                         <div class="product-meta">
-                            <span class="price">₹1799</span>
-                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
-                        </div>
-                        <p class="product-desc">Aromatherapy products, candles and herbal tea</p>
-                        <button class="btn-secondary" onclick="addToCart('hamper4', 'Spa Relaxation Hamper', 1799, 'https://images.unsplash.com/photo-1603569283847-aa295f0d016a')">Add to Cart</button>
-                    </div>
-                </div>
-
-                <!-- Gift Hamper 5 -->
-                <div class="product-card">
-                    <div class="product-badge">Sale</div>
-                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Birthday Celebration Hamper">
-                    <div class="product-info">
-                        <h3>Birthday Celebration Hamper</h3>
-                        <div class="product-meta">
-                            <span class="price">₹1499</span>
-                            <span class="original-price">₹1999</span>
-                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
-                        </div>
-                        <p class="product-desc">Balloons, cake, chocolates and party favors</p>
-                        <button class="btn-secondary" onclick="addToCart('hamper5', 'Birthday Celebration Hamper', 1499, 'https://images.unsplash.com/photo-1603569283847-aa295f0d016a')">Add to Cart</button>
-                    </div>
-                </div>
-
-                <!-- Gift Hamper 6 -->
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" alt="Gourmet Food Hamper">
-                    <div class="product-info">
-                        <h3>Gourmet Food Hamper</h3>
-                        <div class="product-meta">
-                            <span class="price">₹2199</span>
+                            <span class="price">₹1599</span>
                             <span class="rating"><i class="fas fa-star"></i> 4.8</span>
                         </div>
-                        <p class="product-desc">Artisanal cheeses, crackers and preserves</p>
-                        <button class="btn-secondary" onclick="addToCart('hamper6', 'Gourmet Food Hamper', 2199, 'https://images.unsplash.com/photo-1603569283847-aa295f0d016a')">Add to Cart</button>
+                        <p class="product-desc">Assorted savory snacks, artisanal crackers, and dips</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper3', 'Gourmet Snack Delight', 1599, 'https://www.fnp.com//images/pr/l/v20240515173302/gourmet-gift-hamper_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Gift Hamper 4 - FNP Style -->
+                <div class="product-card">
+                    <img src="https://www.thekeico.com/cdn/shop/files/Purple-Hamper_900x.jpg?v=1701189483" alt="Romantic Rendezvous Hamper">
+                    <div class="product-info">
+                        <h3>Romantic Rendezvous Hamper</h3>
+                        <div class="product-meta">
+                            <span class="price">₹2299</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="product-desc">Fine wine, scented candles, and delectable chocolates</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper4', 'Romantic Rendezvous Hamper', 2299, 'https://www.thekeico.com/cdn/shop/files/Purple-Hamper_900x.jpg?v=1701189483')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Gift Hamper 5 - FNP Style -->
+                <div class="product-card">
+                    <div class="product-badge">Limited Offer</div>
+                    <img src="https://www.fnp.com//images/pr/l/v20250211154700/hues-of-love-n-chocolate_1.jpg" alt="Birthday Bash Hamper">
+                    <div class="product-info">
+                        <h3>Birthday Bash Hamper</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1699</span>
+                            <span class="original-price">₹2000</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="product-desc">Celebratory cake, party poppers, and personalized mug</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper5', 'Birthday Bash Hamper', 1699, 'https://www.fnp.com//images/pr/l/v20250211154700/hues-of-love-n-chocolate_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Gift Hamper 6 - FNP Style -->
+                <div class="product-card">
+                    <img src="https://www.fnp.com//images/pr/l/v20240416123843/blossom-brews-tea-gift-box_1.jpg" alt="Tea & Coffee Connoisseur">
+                    <div class="product-info">
+                        <h3>Tea & Coffee Connoisseur</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1399</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                        </div>
+                        <p class="product-desc">Premium tea blends, artisanal coffee, and biscotti</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper6', 'Tea & Coffee Connoisseur', 1399, 'https://www.fnp.com//images/pr/l/v20240416123843/blossom-brews-tea-gift-box_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- New Gift Hamper 7 - FNP Style -->
+                <div class="product-card">
+                    <div class="product-badge">Popular</div>
+                    <img src="https://www.fnp.com//images/pr/l/v20230918222949/cute-teddy-with-small-cadbury-celebrations-box_1.jpg" alt="Kids Fun Hamper">
+                    <div class="product-info">
+                        <h3>Kids Fun Hamper</h3>
+                        <div class="product-meta">
+                            <span class="price">₹999</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="product-desc">Assorted candies, small toys, and coloring books</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper7', 'Kids Fun Hamper', 999, 'https://www.fnp.com//images/pr/l/v20230918222949/cute-teddy-with-small-cadbury-celebrations-box_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- New Gift Hamper 8 - FNP Style -->
+                <div class="product-card">
+                    <img src="https://www.fnp.com//images/pr/l/v20240422162745/healthy-delights-basket-for-mom_1.jpg" alt="Healthy Fruit Basket">
+                    <div class="product-info">
+                        <h3>Healthy Fruit Basket</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1799</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="product-desc">Fresh seasonal fruits, nuts, and healthy granola bars</p>
+                        <button class="btn-secondary" onclick="addToCart('hamper8', 'Healthy Fruit Basket', 1799, 'https://www.fnp.com//images/pr/l/v20240422162745/healthy-delights-basket-for-mom_1.jpg')">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -195,7 +218,7 @@
         <!-- Category Info -->
         <div class="category-info">
             <h3>About Our Gift Hampers</h3>
-            <p>Upahar's gift hampers are carefully curated collections designed to delight recipients. Each hamper is assembled with attention to detail, combining premium products that complement each other. Whether for a special occasion or just to show you care, our hampers make the perfect gift.</p>
+            <p>GiftNest's gift hampers are carefully curated collections designed to delight recipients. Each hamper is assembled with attention to detail, combining premium products that complement each other. Whether for a special occasion or just to show you care, our hampers make the perfect gift.</p>
             
             <h3>Customization Options</h3>
             <p>Many of our hampers can be customized to suit your needs. Add a personal message, select specific products, or even create your own unique hamper combination. Contact our customer care team for custom orders.</p>
@@ -206,7 +229,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Upahar</h3>
+                <h3>GiftNest</h3>
                 <p>Thoughtful gifts for all occasions delivered with care</p>
             </div>
             <div class="footer-section">
@@ -221,19 +244,19 @@
             <div class="footer-section">
                 <h3>Customer Service</h3>
                 <ul>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Shipping Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="customer-care.html">FAQs</a></li>
+                    <li><a href="customer-care.html">Shipping Policy</a></li>
+                    <li><a href="customer-care.html">Return Policy</a></li>
+                    <li><a href="customer-care.html">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Connect With Us</h3>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
                 </div>
                 <p>Subscribe to our newsletter</p>
                 <form class="newsletter">
@@ -243,7 +266,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Upahar. All rights reserved.</p>
+            <p>&copy; 2023 GiftNest. All rights reserved.</p>
         </div>
     </footer>
 

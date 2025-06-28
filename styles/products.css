@@ -24,7 +24,7 @@
 .filter-toggle {
     display: none;
     cursor: pointer;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
     font-weight: 500;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .category-list a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
 }
 
 .price-range {
@@ -160,7 +160,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* Uses primary color variable */
     color: var(--white);
     padding: 0.3rem 0.6rem;
     border-radius: 20px;
@@ -194,7 +194,7 @@
 
 .price {
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
 }
 
 .original-price {
@@ -242,15 +242,15 @@
 }
 
 .pagination a:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* Uses primary color variable */
     color: var(--white);
-    border-color: var(--primary-color);
+    border-color: var(--primary-color); /* Uses primary color variable */
 }
 
 .pagination a.active {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* Uses primary color variable */
     color: var(--white);
-    border-color: var(--primary-color);
+    border-color: var(--primary-color); /* Uses primary color variable */
 }
 
 /* Responsive Styles */

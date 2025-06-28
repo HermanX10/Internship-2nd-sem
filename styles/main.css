@@ -1,6 +1,6 @@
 /* Global Styles */
 :root {
-    --primary-color: #e83e8c;
+    --primary-color: #8a2be2; /* Changed to a shade of purple */
     --secondary-color: #6c757d;
     --dark-color: #343a40;
     --light-color: #f8f9fa;
@@ -155,20 +155,21 @@ nav {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(30, 27, 75, 0.7), rgba(30, 27, 75, 0.7)), 
-                url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
-    height: 70vh;
+                url('https://t3.ftcdn.net/jpg/06/55/96/54/360_F_655965481_28SScueRrcZqXsykZCy9IwDA86lLSttU.jpg') center/cover no-repeat;
+    height: 83.5vh;
     display: flex;
     align-items: center;
-    padding: 0 5%;
+    justify-content: center; 
     color: var(--white);
+    text-align: center; 
 }
-
 .hero-content {
-    max-width: 600px;
+    max-width: 750px;
+    margin: 0 auto; 
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
 }
 
@@ -188,7 +189,7 @@ nav {
 }
 
 .btn-primary:hover {
-    background-color: #d2337a;
+    background-color: #6A1BA0; /* Darker shade of purple for hover */
 }
 
 /* Featured Categories */
@@ -406,14 +407,7 @@ footer {
 }
 
 .newsletter button:hover {
-    background-color: #d2337a;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 0.9rem;
+    background-color: #6A1BA0; /* Darker shade of purple for hover */
 }
 
 /* Responsive Styles */

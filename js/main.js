@@ -1,18 +1,22 @@
 // DOM Elements
 const cartIcon = document.querySelector('.cart-icon');
-let cartCount = document.createElement('span');
-cartCount.classList.add('cart-count');
-cartIcon.appendChild(cartCount);
+let cartCountSpan = document.createElement('span'); // Renamed to avoid conflict with global cartCount
+cartCountSpan.classList.add('cart-count');
+if (cartIcon) { // Check if cartIcon exists before appending
+    cartIcon.appendChild(cartCountSpan);
+}
 
-// Initialize cart
+
+// Initialize cart as a global variable
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
-updateCartCount();
 
 // Update cart count in header
 function updateCartCount() {
     const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
-    cartCount.textContent = totalItems;
-    cartCount.style.display = totalItems > 0 ? 'flex' : 'none';
+    if (cartCountSpan) { // Ensure the span exists
+        cartCountSpan.textContent = totalItems;
+        cartCountSpan.style.display = totalItems > 0 ? 'flex' : 'none';
+    }
 }
 
 // Mobile menu toggle (will be added in responsive design)
@@ -28,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Initial update of cart count on page load
+    updateCartCount();
 });
 
 // Product related functions (used in product pages)

@@ -57,7 +57,8 @@
 }
 
 .form-group input:focus {
-    border-color: var(--primary-color);
+    color: var(--primary-color); /* Changed to primary color variable */
+    border-color: var(--primary-color); /* Uses primary color variable */
     outline: none;
 }
 
@@ -78,7 +79,7 @@
 }
 
 .forgot-password {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
     font-size: 0.9rem;
 }
 
@@ -97,7 +98,7 @@
 }
 
 .auth-footer a {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
     font-weight: 500;
 }
 

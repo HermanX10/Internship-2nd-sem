@@ -38,7 +38,7 @@
 
 .about-section h2 {
     font-size: 2.2rem;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -76,7 +76,7 @@
 
 .value-card i {
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
     margin-bottom: 1.5rem;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .position {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
     font-weight: 500;
     margin-bottom: 1rem;
     font-size: 0.9rem;
@@ -151,7 +151,7 @@
 .number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
     display: block;
     margin-bottom: 0.5rem;
 }
@@ -175,7 +175,7 @@
 .testimonials h2 {
     text-align: center;
     font-size: 2.2rem;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
     margin-bottom: 3rem;
 }
 
@@ -203,7 +203,7 @@
 
 .quote i {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
     opacity: 0.3;
     position: absolute;
     top: -10px;
@@ -243,7 +243,8 @@
 /* Call to Action */
 .about-cta {
     padding: 4rem 5%;
-    background: linear-gradient(rgba(233, 62, 140, 0.9), rgba(233, 62, 140, 0.9)), 
+    /* Changed hardcoded pink to a purple shade for consistency */
+    background: linear-gradient(rgba(138, 43, 226, 0.9), rgba(138, 43, 226, 0.9)), 
                 url('https://images.unsplash.com/photo-1513151233558-d860c5398176') center/cover no-repeat;
     text-align: center;
     color: var(--white);
@@ -273,7 +274,7 @@
 
 .about-cta .btn-primary {
     background-color: var(--white);
-    color: var(--primary-color);
+    color: var(--primary-color); /* Uses primary color variable */
 }
 
 .about-cta .btn-secondary {

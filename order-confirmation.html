@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | GiftNest</title>
+    <title>Order Confirmed | GiftNest</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/auth.css">
+    <link rel="stylesheet" href="styles/cart.css"> <!-- Reusing cart.css for confirmation styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header (same as index.html) -->
+    <!-- Header -->
     <header>
         <div class="logo-container">
             <h1 class="logo">GiftNest</h1>
@@ -33,49 +33,22 @@
             </ul>
             <div class="user-actions">
                 <a href="login.html" class="btn-login">Login</a>
-                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count"></span></a>
             </div>
         </nav>
     </header>
 
-    <!-- Login Section -->
-    <section class="auth-container">
-        <div class="auth-form">
-            <h2>Login to Your Account</h2>
-            <form id="loginForm">
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="form-options">
-                    <label class="remember-me">
-                        <input type="checkbox" name="remember"> Remember me
-                    </label>
-                    <a href="forgot-password.html" class="forgot-password">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn-primary">Login</button>
-            </form>
-            <div class="auth-footer">
-                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
-                <div class="social-login">
-                    <p>Or login with:</p>
-                    <div class="social-icons">
-                        <a href="https://accounts.google.com/v3/signin/identifier?ifkv=AdBytiORcFBowoZMvyBMod4id_Utu1SzAyPfXk1ySixEe_mClE-JdH44d9iz13Aw58kYaWfTyqum8A&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1999693332%3A1750573815275294" class="social-btn google"><i class="fab fa-google"></i></a>
-                        <a href="https://www.facebook.com/" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="auth-image">
-            <img src="https://www.satyamkraft.in/cdn/shop/files/gollllllllden_700x700.jpg?v=1745213468" alt="Gift Box">
+    <!-- Order Confirmation Section -->
+    <section class="order-confirmation-section">
+        <div class="confirmation-content">
+            <i class="fas fa-check-circle"></i>
+            <h1>Your Order Has Been Placed!</h1>
+            <p>Thank you for your purchase. Your order is being processed and will be delivered soon.</p>
+            <a href="index.html" class="btn-primary">Continue Shopping</a>
         </div>
     </section>
 
-    <!-- Footer (same as index.html) -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -88,7 +61,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="customer-care.html">Contact Us</a></li>
+                    <li><a href="customer-care.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -121,6 +94,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/auth.js"></script>
 </body>
 </html>
