@@ -138,12 +138,30 @@
 }
 
 .social-btn.google {
-    background-color: #DB4437;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .social-btn.facebook {
-    background-color: #4267B2;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

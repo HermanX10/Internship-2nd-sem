@@ -190,6 +190,7 @@ nav {
 
 .btn-primary:hover {
     background-color: #6A1BA0; /* Darker shade of purple for hover */
+    
 }
 
 /* Featured Categories */
@@ -263,7 +264,7 @@ nav {
 .offer-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: center;
 }
 
 .offer-card h3 {

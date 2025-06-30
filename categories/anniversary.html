@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary | GiftNest</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">GiftNest</h1>
+            <p class="tagline">Gifts that speak from the heart</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../products.html">All Products</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="flowers.html">Flowers</a>
+                        <a href="chocolates.html">Chocolates</a>
+                        <a href="gifts.html">Gift Hampers</a>
+                        <a href="personalized.html">Personalized</a>
+                    </div>
+                </li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../customer-care.html">Customer Care</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="../../login.html" class="btn-login">Login</a>
+                <a href="../../cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-header">
+            <h2>Anniversary Gifts</h2>
+            <div class="sort-filter">
+                <div class="filter-toggle">
+                    <i class="fas fa-filter"></i> Filters
+                </div>
+                <div class="sort-options">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="popular">Recommended</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-container">
+                        <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Chocolate Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <img src="https://www.fnp.com//images/pr/l/v20250410150710/personalised-ghibli-chocolate-cream-cake-500g_1.jpg" alt="Luxury Chocolate Box">
+                    <div class="product-info">
+                        <h3>Personalized Ghibli Chocolate Cream Cake</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1099</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="product-desc">A dreamy delight straight out of a Studio Ghibli world – rich chocolate, soft cream, and your personal touch in every bite.</p>
+                        <button class="btn-secondary" onclick="addToCart('choco1', 'Personalized Ghibli Chocolate Cream Cake', 1099, 'https://www.fnp.com//images/pr/l/v20250410150710/personalised-ghibli-chocolate-cream-cake-500g_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 2 -->
+                <div class="product-card">
+                    <img src="https://www.fnp.com//images/pr/l/v20241025182024/double-sided-printed-personalized-cushion_1.jpg" alt="Dark Chocolate Collection">
+                    <div class="product-info">
+                        <h3>Personalized Double Sided Cushion</h3>
+                        <div class="product-meta">
+                            <span class="price">₹399</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="product-desc">Two sides, endless memories – cuddle up with comfort and custom prints that tell your story from both angles.</p>
+                        <button class="btn-secondary" onclick="addToCart('choco2', 'Personalized Double Sided Cushion', 399, 'https://www.fnp.com//images/pr/l/v20241025182024/double-sided-printed-personalized-cushion_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="https://www.fnp.com//images/pr/l/v20250324154734/personalised-song-code-photo-frame_1.jpg" alt="Chocolate Truffles">
+                    <div class="product-info">
+                        <h3>Personalized Song Code Photo Frame</h3>
+                        <div class="product-meta">
+                            <span class="price">₹599</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="product-desc">Capture the moment, freeze the melody – scan the code and relive your song with a frame that sings your love aloud</p>
+                        <button class="btn-secondary" onclick="addToCart('choco3', 'Personalized Song Code Photo Frame', 599, 'https://www.fnp.com//images/pr/l/v20250324154734/personalised-song-code-photo-frame_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 4 -->
+                <div class="product-card">
+                    <img src="https://www.fnp.com//images/pr/l/v20230525181902/love-is-in-the-air-explosion-box_1.jpg" alt="Personalized Chocolate Box">
+                    <div class="product-info">
+                        <h3>Love Is In The Air Butterfly Explosion Box</h3>
+                        <div class="product-meta">
+                            <span class="price">₹1399</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="product-desc">Open the box, release the butterflies – a magical surprise of fluttering love, photos, and heartfelt notes.</p>
+                        <button class="btn-secondary" onclick="addToCart('choco4', 'Love Is In The Air Butterfly Explosion Box', 1399, 'https://www.fnp.com//images/pr/l/v20230525181902/love-is-in-the-air-explosion-box_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 5 -->
+                <div class="product-card">
+                    <div class="product-badge">Sale</div>
+                    <img src="https://www.fnp.com//images/pr/l/v20240911124119/timeless-glow-led-lamp_1.jpg" alt="Chocolate Dipped Fruits">
+                    <div class="product-info">
+                        <h3>Personalized Timeless Glow LED Lamp</h3>
+                        <div class="product-meta">
+                            <span class="price">₹749</span>
+                            <span class="original-price">₹899</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                        </div>
+                        <p class="product-desc">Turn memories into light – a glowing keepsake that illuminates your favorite photo with an eternal shine</p>
+                        <button class="btn-secondary" onclick="addToCart('choco5', 'Personalized Timeless Glow LED Lamp', 749, 'https://www.fnp.com//images/pr/l/v20240911124119/timeless-glow-led-lamp_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 6 -->
+                <div class="product-card">
+                    <img src="https://www.fnp.com//images/pr/l/v20250516130339/custom-red-rotating-photo-pen-stand_1.jpg" alt="Gourmet Chocolate Bars">
+                    <div class="product-info">
+                        <h3>Custom Red Rotating Photo Pen Stand</h3>
+                        <div class="product-meta">
+                            <span class="price">₹549</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.4</span>
+                        </div>
+                        <p class="product-desc">Spin your memories, store your essentials – a desk accessory that’s practical, personal, and picture-perfect. </p>
+                        <button class="btn-secondary" onclick="addToCart('choco6', 'Custom Red Rotating Photo Pen Stand', 549, 'https://www.fnp.com//images/pr/l/v20250516130339/custom-red-rotating-photo-pen-stand_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 7 -->
+                <div class="product-card">
+                    <img src="https://www.fnp.com//images/pr/l/v20230918223612/personalised-name-couple-mugs_1.jpg" alt="Gourmet Chocolate Bars">
+                    <div class="product-info">
+                        <h3>Personalised Name Couple Mugs</h3>
+                        <div class="product-meta">
+                            <span class="price">₹799</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.4</span>
+                        </div>
+                        <p class="product-desc">Sip together, smile forever – matching mugs that celebrate your bond, one cup at a time</p>
+                        <button class="btn-secondary" onclick="addToCart('choco7', 'Personalised Name Couple Mugs', 799, 'https://www.fnp.com//images/pr/l/v20230918223612/personalised-name-couple-mugs_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 8 -->
+                <div class="product-card">
+                    <img src="https://www.fnp.com//images/pr/l/v20250110131323/why-i-love-you-puzzle_1.jpg" alt="Gourmet Chocolate Bars">
+                    <div class="product-info">
+                        <h3>Why I Love You Romantic Puzzle</h3>
+                        <div class="product-meta">
+                            <span class="price">₹549</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.4</span>
+                        </div>
+                        <p class="product-desc">Piece by piece, reveal your heart – a love-filled puzzle that puts your reasons into a beautiful picture</p>
+                        <button class="btn-secondary" onclick="addToCart('choco8', 'Why I Love You Romantic Puzzle', 849, 'https://www.fnp.com//images/pr/l/v20250110131323/why-i-love-you-puzzle_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 9 -->
+                <div class="product-card">
+                    <img src="https://www.fnp.com//images/pr/l/v20250526125019/promise-to-annoy-you-valentine-cushion_1.jpg" alt="Gourmet Chocolate Bars">
+                    <div class="product-info">
+                        <h3>Promise To Annoy You Cushion</h3>
+                        <div class="product-meta">
+                            <span class="price">₹799</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.4</span>
+                        </div>
+                        <p class="product-desc">Soft, snuggly, and a little savage – the perfect cushion for couples who fight hard and love harder</p>
+                        <button class="btn-secondary" onclick="addToCart('choco7', 'Promise To Annoy You Cushion', 799, 'https://www.fnp.com//images/pr/l/v20250526125019/promise-to-annoy-you-valentine-cushion_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 10 -->
+                <div class="product-card">
+                    <img src="https://www.fnp.com//images/pr/l/v20250526125018/personalised-love-affair-led-cushion-hand-delivery_1.jpg" alt="Gourmet Chocolate Bars">
+                    <div class="product-info">
+                        <h3>Personalised Love Affair LED Cushion</h3>
+                        <div class="product-meta">
+                            <span class="price">₹599</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.4</span>
+                        </div>
+                        <p class="product-desc">Light up your love – a glowing cushion that captures your chemistry and adds warmth to every cuddle</p>
+                        <button class="btn-secondary" onclick="addToCart('choco7', 'Personalised Love Affair LED Cushion', 599, 'https://www.fnp.com//images/pr/l/v20250526125018/personalised-love-affair-led-cushion-hand-delivery_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <!-- Category Info -->
+        <div class="category-info">
+            <h3>About Our Anniversary Gifts</h3>
+            <p>Celebrate love that lasts with GiftNest’s Anniversary Collection — a timeless range of curated gifts designed to express affection, appreciation, and lasting memories. From romantic keepsakes and personalized photo frames to luxury hampers and couple sets, each item is selected to make your special day unforgettable.</p>
+            <br>
+            <h3>Delivery Information</h3>
+            <p>All anniversary gifts are thoughtfully packed to ensure they arrive in perfect condition, ready to surprise your loved one. We offer nationwide delivery, with options for elegant gift wrapping and custom messages. For perishable items like cakes or chocolates, prompt refrigeration is recommended upon delivery.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GiftNest</h3>
+                <p>Thoughtful gifts for all occasions delivered with care</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../products.html">Products</a></li>
+                    <li><a href="../../about-us.html">About Us</a></li>
+                    <li><a href="../../customer-care.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="customer-care.html">FAQs</a></li>
+                    <li><a href="customer-care.html">Shipping Policy</a></li>
+                    <li><a href="customer-care.html">Return Policy</a></li>
+                    <li><a href="customer-care.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <p>Subscribe to our newsletter</p>
+                <form class="newsletter">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 GiftNest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/products.js"></script>
+</body>
+</html>

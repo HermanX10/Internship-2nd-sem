@@ -58,41 +58,6 @@
             </div>
         </div>
 
-        <div class="products-container">
-            <!-- Filters Sidebar -->
-            <aside class="filters-sidebar">
-                <div class="filter-group">
-                    <h3>Categories</h3>
-                    <ul class="category-list">
-                        <li><a href="categories/flowers.html">Flowers</a></li>
-                        <li><a href="categories/chocolates.html">Chocolates</a></li>
-                        <li><a href="categories/gifts.html">Gift Hampers</a></li>
-                        <li><a href="categories/personalized.html">Personalized Gifts</a></li>
-                    </ul>
-                </div>
-                <div class="filter-group">
-                    <h3>Price Range</h3>
-                    <div class="price-range">
-                        <input type="range" min="0" max="5000" value="5000" class="slider" id="priceRange">
-                        <div class="price-values">
-                            <span>₹0</span>
-                            <span>₹5000</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="filter-group">
-                    <h3>Occasions</h3>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" name="occasion" value="birthday"> Birthday</label>
-                        <label><input type="checkbox" name="occasion" value="anniversary"> Anniversary</label>
-                        <label><input type="checkbox" name="occasion" value="valentine"> Valentine's Day</label>
-                        <label><input type="checkbox" name="occasion" value="wedding"> Wedding</label>
-                        <label><input type="checkbox" name="occasion" value="thankyou"> Thank You</label>
-                    </div>
-                </div>
-                <button class="btn-primary apply-filters">Apply Filters</button>
-            </aside>
-
             <!-- Products Grid -->
             <div class="products-grid">
                 <!-- Product Card 1 -->
@@ -208,6 +173,34 @@
                         </div>
                         <p class="product-desc">A smart combo that turns every thought into a statement.</p>
                         <button class="btn-secondary" onclick="addToCart('prod8', 'Personalised Blue Notebook & Pen Combo', 599, 'https://www.fnp.com//images/pr/l/v20230918223506/personalised-blue-notebook-and-pen-combo_1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Flower Product 6 -->
+                <div class="product-card">
+                    <img src="https://kvitochka.ua/image/cache/catalog/image/cache/catalog/00000000003/bouquet-ellow-blue-2024-18-612x612.webp" alt="Sunflower Bouquet">
+                    <div class="product-info">
+                        <h3>Large premium bouquet of Love</h3>
+                        <div class="product-meta">
+                            <span class="price">₹2899</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="product-desc">Large premium bouquet of peony roses, chrysanthemums and decor. </p>
+                        <button class="btn-secondary" onclick="addToCart('flower6', 'Large premium bouquet of Love', 2899, 'https://kvitochka.ua/image/cache/catalog/image/cache/catalog/00000000003/bouquet-ellow-blue-2024-18-612x612.webp')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Personalized Product 3 -->
+                <div class="product-card">
+                    <img src="https://www.fnp.com//images/pr/l/v20200512212031/personalised-wooden-name-plate_1.jpg" alt="Personalised Wooden Name Plate">
+                    <div class="product-info">
+                        <h3>Personalised Wooden Name Plate</h3>
+                        <div class="product-meta">
+                            <span class="price">₹699</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="product-desc">Customizable with names, messages, or house numbers</p>
+                        <button class="btn-secondary" onclick="addToCart('personal2', 'Engraved Wooden Photo Frame', 699, 'https://www.fnp.com//images/pr/l/v20200512212031/personalised-wooden-name-plate_1.jpg')">Add to Cart</button>
                     </div>
                 </div>
             </div>
